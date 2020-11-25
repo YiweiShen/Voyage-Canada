@@ -704,7 +704,7 @@ address a{
 }
 
 .email button{
-    padding: 5px;
+    padding: 0.3rem;
     border: 2px solid white;
     font-weight: bold;
     cursor: pointer;
@@ -887,6 +887,10 @@ input[type="submit"]:hover {
   margin: 2em;
 }
 
+.avatar_image:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
 .aboutus_div {
     padding: 1em;
     margin-left: 15%;
@@ -932,13 +936,13 @@ input[type="submit"]:hover {
 
 #hiring_table, th, td {  
     border: 1px solid white;
-    padding: 15px; 
+    padding: 1vw; 
 }
 
 #hiring_table {  
     border-collapse: collapse;  
-    width: 50%;  
-    margin-left: 25%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #office_hour_list li {
@@ -967,7 +971,7 @@ input[type="submit"]:hover {
     }
     .nav-links {
         display: inline;
-        text-align: center
+        text-align: right;
     }
 
   }
@@ -982,5 +986,31 @@ li a {
 }
 
 iframe {
-    width: 80%;
+    width: 60vw;
+    height: 40vw; 
+}
+
+#contactform_subject {
+    width: 35vw;
+    height: 20vw; 
+}
+
+#aboutus_main .aboutus {
+    background: -moz-linear-gradient(#336699, #0f0f0f); 
+	background: -o-linear-gradient(#336699, #0f0f0f); 
+	background: -webkit-linear-gradient(#336699, #0f0f0f); 
+	background: linear-gradient(#336699, #0f0f0f); 
+}
+
+@media only screen and (max-width: 600px) {
+    .avatar_image {
+        float: none;
+        border-radius: 0;
+        margin: 0;
+    }
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
 }
