@@ -18,10 +18,9 @@ button{
 html {
     scroll-behavior: smooth;
     background-color:#141824;
-
   }
 
-  .nav-container{
+.nav-container{
     background-color: rgb(218, 218, 218);
     width: 100%;
     position: fixed;
@@ -42,7 +41,7 @@ nav{
 
 .nav-links{
     display: flex;
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
 
 }
@@ -53,6 +52,7 @@ nav{
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 1em;
+    white-space: nowrap;
    
 }
 
@@ -67,215 +67,229 @@ ul{
 .logo{
     flex: 2;
     font-family: 'Lobster', cursive;
-    font-size: 2em;
+    font-size: 4vh;
 }
 
-@media only screen and (max-width: 933px) {
-    .aboutus_div {
-        padding: 3vh;
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-    }
-
-    .nav-container {
-        width: 100%;
-        position: relative;
-    }
-    .nav-links {
-        display: inline;
-        text-align: right;
-    }
-
-  }
 
 
-
-/* Home Main*/
-.top{
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-}
-
-.centered{
-    position: absolute;
-    width: 100%;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 90%;
-}
-
-.top h2{
-    font-size: 8vw;
-    color: rgb(0, 0, 0);
-    letter-spacing: 2px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 3px;
-
-
-}
-
-.main-image{
-    width: 100%;
-}
-
-.main-image{
-    max-height: 100vh;
-}
 
 /**/
 
 #main-details{
-    background-color:#141824;
+    padding-top: 2em;
     height: 100%;
     margin-top: -1%;
-}
-
-
-
-#main-details h1{
-    color: white;
-    font-size: 2.2em;
-    padding-left: 5vw;
-    padding-top: 5vw;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    column-gap: 25px;
-    row-gap: 50px;
-    width: 90%;
-    margin: auto;
-    padding-top: 10%;
-    padding-bottom:3%;
     
 }
 
-.sub-grid img{
-    width: 130%;
-    height: 100%;
-  
+#main-details h1{
+    padding-bottom: 1em;
+    font-size: 2.5em;
 }
 
-.sub-grid{
-    background-color: #C4C4C4;
-    text-align: center;
-    overflow: hidden;
-    height: 30vw;
-    border-radius: 2vw;
-}
-
-.sub-grid p{
-    text-align: start;
-    font-size: 1.2vw;
-    padding: 1.5vw;
-}
-
-.sub-grid strong{
-    font-size: 2vw;
-}
-
-.info{
-    height: 70%;
-}
-
-.img-grid{
-    height: 60%;
+.package-details{
+    display: flex;
+    height: 20em;
     overflow: hidden;
 }
 
-@media screen and (max-width: 855px) {
-    .grid{
-        width: 50%;
-    }
-    .sub-grid img{
-        width: auto;
-        height: 130%;
-    }
-    .sub-grid{
-        height: 50vw;
-    }
-    .img-grid{
-        height: 80%;
-        overflow: hidden;
-    }
 
-    .sub-grid p{
-        font-size: .5em;
-        padding: 1.5vw;
+.package-details p{
+    color: white;
+    font-size: 1.2em;
+}
+
+.paragraph{
+    padding: 2em;
+}
+
+.image{
+    padding-left: 2em;
+    width: 200em;
+    overflow: hidden;  
+}
+
+.image img{
+    
+    width: 100%;
+}
+
+.package-include ul{
+    padding-bottom: 2em;
+    list-style-type: square;
+}
+
+.package-include h2{
+    padding-top: 2em;
+    padding-left: 2em;
+    font-size: 2em;
+    color: white;
+}
+
+.package-fulldetails{
+    padding-top: 3em;
+    padding-left: 8em;
+    font-size: 1.5em;
+    color: white;
+}
+
+.package-fulldetails p{
+    padding-top: 2em;
+    color: rgb(195, 238, 220);
+}
+
+.package-fulldetails hr{
+    margin-left: -100%;
+}
+
+@media screen and (max-width: 1810px) {
+    #main-details h1{
+        padding-top: 5em;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    #main-details h1{
+        padding-top: 5em;
+    }
+}
+
+@media screen and (max-height: 1365px) {
+    #main-details h1{
+        padding-top: 2em;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .grid{
-        width: 50%;
-    }
-    .sub-grid img{
-        width: auto;
-        height: 130%;
-    }
-    .sub-grid{
-        height: 50vw;
+
+    h1{
+        text-align: center;
     }
 
-    #main-details h1{
+
+    .package-details{
+        flex-direction: column;
+        height: 40em;
+    }
+
+    .image{
+        align-self: center;
+        width: 50em;
+        height: 100%;
+        padding-right: 2em;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .package-include h2{
+        font-size: 1.5em;
         text-align: center;
+        padding-left: 0%;
+    }
+    .package-fulldetails{
+        font-size: 1em;
+        padding-left: 2em;
+    }
+    .paragraph{
+        font-size: .9em;
+    }
+    .package-include .button_book{
         font-size: 1.5em;
     }
+  }
+
+@media screen and (max-width: 425px) {
+    .package-include h2{
+        font-size: 1.5em;
+        text-align: center;
+        padding-left: 0%;
+    }
+    .package-fulldetails{
+        font-size: .9em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .paragraph{
+        font-size: .8em;
+    }
+
+    .package-include .book-now{
+        padding-bottom: 2em;
+    }
+    .package-include .button_book{
+        font-size: 1em;
+        width: 22em;
+        transition: .2s ease;
+    }
+
+    .package-include .button_book:hover{
+        background-position: 20em;
+    }
 }
 
 
-
-@media screen and (max-width: 600px) {
-    .sub-grid{
-        height: 60vw;
+@media screen and (max-width: 375px) {
+    .package-include .button_book{
+        font-size: 1em;
+        width: 20em;
+        transition: .2s ease;
     }
+    .package-include .button_book:hover{
+        background-position: 18em;
+    }
+  }
 
-    .sub-grid img{
-        width: auto;
-        height: 100%;
-      
+@media screen and (max-width: 320px) {
+    .package-include .button_book{
+        font-size: 1em;
+        width: 18em;
+        transition: .2s ease;
+    }
+    .package-include .button_book:hover{
+        background-position: 14em;
     }
 }
 
-
-@media screen and (max-width: 450px) {
-
-    .img-grid{
-        height: 80%;
-        overflow: hidden;
-    }
-    .sub-grid{
-        height: 80vw;
-    }
-
-    .sub-grid img{
-        width: auto;
-        height: 100%;
-      
-    }
-
-    .grid{
-        width: 80%;
-        grid-template-columns: repeat(auto-fill, minmax(10.45rem, 1fr));
-    }
-
+/*BOOK NOW BUTTON */
+.book-now{
+    padding-top: 3em;
+    text-align: center;
 }
 
-@media screen and (max-width: 1100px) {
-
+.button_book{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-size: 2em;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    position: relative;
+    transition: .3s ease;  
 }
 
+.button_book:hover{
+    background:url("./images/right-arrow.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 7em;
+    padding-right: 2em;
+    color: rgb(255, 255, 60);
+}
 
-/*GO TOP*/
-
+h1{
+    color: white;
+    font-size: 3.5vw;
+    padding-left: 5vw;
+    padding-top: 5vw;  
+}
 
 .button_style{
     border: 3px solid rgb(255, 255, 255);
     padding: 5px 10px;
-    font-size: 2vh;
+    font-size: .9em;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -321,7 +335,7 @@ footer{
     display: flex;
     background: #000000;
     padding-left: 8%;
-    padding-right: 8%;
+    padding-right: 2em;
     padding-top: 2vw;
     padding-bottom: 2vw;
     align-items: center;
@@ -335,9 +349,8 @@ address a{
     font-style: normal;
 }
 
-address{	
-    padding-bottom: 2vh;
-    padding-top: 5vh;
+address{
+    padding-top: 2em;
 }
 
 .gmail{
@@ -349,23 +362,25 @@ address{
 .gmail a{
     padding-left: 10px;
 }
-
 .social_media{
     text-align: center;
     width: 100%;
-    
+    margin-left: 20px;
     margin-right: 20px;
+
+
 }
 
 .social_media ul{
     display: flex;
     padding-right: 3em;
     justify-content: space-evenly;
+    
 }
 
 .social_media h1{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     font-size: 1.3rem;
     padding-bottom: 2vh;
     padding-top: 4vh;
@@ -386,7 +401,7 @@ address{
 .social h1{
     
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     font-size: 1.3rem;
     padding-bottom: 2vh;
     padding-top: 4vh;
@@ -403,7 +418,7 @@ address{
 
 .email button{
     padding: 5px;
-    background-color: white;
+    background-color: whitesmoke;
     border: 2px solid white;
     font-weight: bold;
     cursor: pointer;
@@ -417,10 +432,13 @@ address{
 
     .social_media h1{
         font-size: .8em;
+        padding-right: 6vh;
     }
 
     .social h1{
         font-size: .8em;
+        padding-right: 5vh;
+        
     }
 
     address a{
@@ -433,41 +451,6 @@ address{
     }
 }
 
-@media only screen and (max-width: 933px) {
-    .aboutus_div {
-        padding: 3vh;
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-    }
-
-    .nav-container {
-        width: 100%;
-        position: relative;
-    }
-    .nav-links {
-        display: inline;
-        text-align: right;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-    
-    address .phone {
-        text-align: center;
-    }
-
-    address {	
-        padding-bottom: 2vh;	
-        padding-top: 5vh;	
-    }
-  }
-
-
-
-
-
 /*search*/
 #wrap {
     margin-left: 7vh;
@@ -475,7 +458,6 @@ address{
     display: inline-block;
     position: relative;
     height: 20px;
-    position: relative;
 }
 
 input[id="search"] {
@@ -534,4 +516,33 @@ input[type="submit"]:hover {
 /* interactive icons*/
 
 
+@media only screen and (max-width: 933px) {
+    .aboutus_div {
+        padding: 3vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
 
+    .nav-container {
+        width: 100%;
+        position: relative;
+    }
+    .nav-links {
+        display: inline;
+        text-align: right;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    address .phone {
+        text-align: center;
+    }
+
+    address {
+        padding-bottom: 2vh;
+        padding-top: 5vh;
+    }
+  }
