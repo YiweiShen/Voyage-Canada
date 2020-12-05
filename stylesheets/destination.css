@@ -42,9 +42,8 @@ nav{
 
 .nav-links{
     display: flex;
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
-
 }
 
 .nav-links a{
@@ -53,7 +52,7 @@ nav{
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 1em;
-   
+    white-space: nowrap;
 }
 
 .nav-links  :hover{
@@ -65,10 +64,12 @@ ul{
 }
 
 .logo{
+    font-size: 4vh;
     flex: 2;
     font-family: 'Lobster', cursive;
-    font-size: 2em;
+    
 }
+
 
 @media only screen and (max-width: 933px) {
     .aboutus_div {
@@ -318,7 +319,7 @@ ul{
 }
 
 .button_style:hover{
-    background:url("/images/up-arrow.png");
+    background:url('../images/up-arrow.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 4.8em;
@@ -475,9 +476,6 @@ address{
   }
 
 
-
-
-
 /*search*/
 #wrap {
     margin-left: 7vh;
@@ -485,7 +483,6 @@ address{
     display: inline-block;
     position: relative;
     height: 20px;
-    position: relative;
 }
 
 input[id="search"] {
@@ -524,7 +521,7 @@ input[type="text"]:focus {
     width: 5vh;
     color:red;
     float: right;
-    background: url('/images/search.png') center center no-repeat ;
+    background: url('../images/search.png') center center no-repeat ;
     background-size: 5vh;
     text-indent: -10000px;
     border: none;
